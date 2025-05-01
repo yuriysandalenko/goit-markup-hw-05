@@ -653,10 +653,6 @@ display: flex;
     left: 16px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }   
-svg {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 
 .container-place {
     margin-bottom: 8px;
@@ -704,7 +700,8 @@ border-radius: 2px;
 
 .place:focus + .icon-place {
 fill: #4d5ae5;
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+/* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .place:focus {
