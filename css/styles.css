@@ -741,18 +741,22 @@ input:checked + label > .custom-checkbox {
 
 .footer-form {
     display: flex;
+    gap:24px;
 }
 
 .place-form-footer {
     border: 1px solid #fff;
         border-radius: 4px;
-        width: 100%;
+        width: 264px;
         height: 40px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         background-color: transparent;
         color: #fff;
         padding-left: 16px;
         outline: none;
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
 }
 .place-form-footer:focus,
 .place-form-footer:hover {
@@ -776,12 +780,14 @@ input:checked + label > .custom-checkbox {
 
 .place-footer-text {
     margin-bottom: 16px;
+    font-weight: 500;
+    color: #ffffff;
 }
 .btn-footer {
-    margin-left: 24px;
+    
     border-radius: 4px;
         padding: 8px 24px;
-        width: 165px;
+        min-width: 165px;
         height: 40px;
         background-color:  #4d5ae5;
         border: none;
