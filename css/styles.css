@@ -690,11 +690,10 @@ border-radius: 2px;
     width: 16px;
     height: 16px;
     display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        fill: transparent;
-       
-        margin-right: 8px;
+    justify-content: center;
+    align-items: center;
+    fill: transparent;
+    margin-right: 8px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -710,11 +709,11 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.standart-checkbox {
+/* .standart-checkbox {
     visibility: hidden;
     position: relative;
     
-}
+} */
 
 .check {
    position: absolute;
@@ -726,10 +725,7 @@ input:checked + label > .custom-checkbox {
     border: none;
 }
 
-.sendbtn {
-   /* margin-top: 24px; */
-   
-}
+
 
 .container-form-footer {
     margin-left: auto;
