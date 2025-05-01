@@ -616,13 +616,18 @@ display: flex;
     background-color: transparent;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      
+   
 
 }
 .plholder {
-    /* margin-bottom: 16px; */
+    font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: rgba(46, 47, 66, 0.4);
+        padding: 8px 16px;
+   
     height: 120px;
-    width: 100%;
+    
     resize: none;
     
 }
@@ -638,10 +643,7 @@ display: flex;
         letter-spacing: 0.04em;
 
 }
-.plholder {
-    padding-left: 16px;
-    padding-top: 8px;
-}
+
 .container-input {
     position: relative;
     display: flex;
@@ -654,6 +656,7 @@ display: flex;
     top: 50%;
     transform: translateY(-50%);
     left: 16px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -664,15 +667,16 @@ display: flex;
     display: flex;
     align-items: center;
     position: relative;
+    margin-bottom: 24px;
 }
 .text-checkbox {
     font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 12px;
-        line-height: 1.16667;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8e8f99;
-        margin-left: 8px;
+      
 }
 .link-checkbox {
     font-weight: 400;
@@ -682,6 +686,7 @@ display: flex;
         text-decoration-skip-ink: none;
         color: #4d5ae5;
         letter-spacing: 0.04em;
+        
 }
 
 .custom-checkbox {
@@ -689,16 +694,13 @@ border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     width: 16px;
     height: 16px;
-    display: inline-block;
-    display: flex;
+    display: inline-flex;
         justify-content: center;
         align-items: center;
-       
-        /* margin-right: 8px; */
-        position: absolute;
         fill: transparent;
-        transform: translateY(-50%);
-       left: 0;
+       
+        margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -725,11 +727,12 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 input:checked + label > .custom-checkbox {
     fill: #f4f4fd;
-    background-color: #4d5ae5;
+    background-color: #404bbf;
+    border: none;
 }
 
 .sendbtn {
-   margin-top: 24px;
+   /* margin-top: 24px; */
    
 }
 

@@ -468,24 +468,30 @@
                      <label class="modal-label" for="user-comment">
                     Comment
                     </label>
-                    <textarea class="place plholder" name="comment" id="user-comment" placeholder="Text input"></textarea>
+                    <textarea class="place plholder" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
                    </div>       
                     <div class="container-checkbox">
                         <input 
                          type="checkbox" 
-                         id="check"
-                         name="v" 
-                         class="standart-checkbox">
+                         id="user-privacy"
+                         value="true"
+                         name="user-privacy" 
+                         class="standart-checkbox visually-hidden">
                         
-                        <label for="check">
+                        <label 
+                        class="text-checkbox"
+                        for="user-privacy">
+                            
                             <span class="custom-checkbox">
                                 <svg class="vector" width="10" height="8">
                                     <use href="./images/icons.svg#icon-Vector"></use>
                                 </svg>
                             </span>
+                            I accept the terms and conditions of the
+                            <a class="link-checkbox" href="">Privacy Policy</a>
                             </label>
-                            <p class="text-checkbox">I accept the terms and conditions of the
-                            <a class="link-checkbox" href="">Privacy Policy</a></p>
+                            <!-- <p class="text-checkbox">I accept the terms and conditions of the -->
+                            
                         
                     </div>
                     <button 
