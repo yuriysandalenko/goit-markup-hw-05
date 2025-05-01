@@ -646,7 +646,7 @@ display: flex;
 }
 
 .icon-place {
-    /* fill: #2e2f42; */
+    fill: #2e2f42;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -811,5 +811,8 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .vector {
     fill: #f4f4fd;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: absolute;
+    top: 0;
+        transform: translateY(50%);
+        left: 0;
 }
