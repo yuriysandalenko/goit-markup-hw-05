@@ -51,7 +51,7 @@
             <h1 class="main-info">Effective Solutions
                 for Your Business</h1>
                 
-            <button class="main-but" type="button">Order Service</button>
+            <button data-modal-open class="main-but" type="button">Order Service</button>
             </div>
         </section>
         <section class="strategy-section">
@@ -389,9 +389,115 @@
             </ul>
             
         </div>
+        <div class="container-form-footer">
+            <p class="footer-text place-footer-text">
+                Subscribe
+            </p>
+        <form class="footer-form">
+            <label for="place-footer">
+               <input 
+                type="email"
+                id="place-footer"
+                name="form_foot"
+                placeholder="E-mail"
+                class="place-form-footer">
+                
+            </label>
+            <div class="container-btn-footer">
+                <button class="btn-footer"
+                type="submit">Subscribe
+                <svg class="send" width="24" height="20">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+
+                </button>
+            </div>
+        </form>
+        </div>
     </div>
+
     
     </footer>
+    <div data-modal class="backdrop is-open">
+        <div class="modal">
+            <button data-modal-close class="btn-icone-close" type="button" >
+            <svg class="modal-icone-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+            </button>
+            <p class="modal-title">
+                Leave your contacts and we will call you back
+            </p>
+            <form class="modal-form">
+                <div class="container-place">
+                <label class="modal-label" for="username">
+                    Name 
+                    </label>
+                    <div class="container-input">
+                    <input class="place" type="text" id="username" name="user" placeholder="Your name" autofocus>
+                    <svg class="icon-place person" width="18" height="18">
+                      <use href="./images/icons.svg#icon-person-black"></use>
+                    </svg>
+                    </div>
+                    </div>
+                    <div class="container-place">
+                <label class="modal-label" for="usertel">
+                    Phone
+                    </label>
+                    <div class="container-input">
+                    <input class="place" type="tel" id="usertel" name="telephone-number" placeholder="Your phone">
+                    <svg class="icon-place telephone" width="18" height="24">
+                      <use href="./images/icons.svg#icon-phone-black"></use>
+                    </svg>
+                    </div>
+                    </div>
+                    <div class="container-place">
+                    <label class="modal-label" for="email">
+                    Email
+                    </label>
+                    <div class="container-input">
+                     <input class="place" type="email" id="email" name="mail" placeholder="Your mail">
+                     <svg class="icon-place mail" width="18" height="24">
+                       <use href="./images/icons.svg#icon-email-black"></use>
+                     </svg>
+                    </div>
+                    </div>
+                   
+                     <label class="modal-label" for="coment">
+                    Comment
+                    </label>
+                    <textarea class="place plholder" name="comment" id="coment" placeholder="Text input"></textarea>
+
+                    <div class="container-checkbox">
+                        <input 
+                         type="checkbox" 
+                         id="check"
+                         name="v" 
+                         class="standart-checkbox">
+                        
+                        <label for="check">
+                            <span class="custom-checkbox">
+                                <svg class="vector" width="10" height="8">
+                                    <use href="./images/icons.svg#icon-Vector"></use>
+                                </svg>
+                            </span>
+                            </label>
+                            <p class="text-checkbox">I accept the terms and conditions of the
+                            <a class="link-checkbox" href="">Privacy Policy</a></p>
+                        
+                    </div>
+                    <button 
+                    class="main-but sendbtn"
+                    type="submit">Send
+
+                    </button>
+                
+            </form>
+           
+
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
