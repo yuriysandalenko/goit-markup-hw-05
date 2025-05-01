@@ -400,11 +400,11 @@
                 id="place-footer"
                 name="form-foot"
                 placeholder="E-mail"
-                class="place-form-footer">
+                class="place-formfooter">
             </label>
                 <button class="btn-footer"
                 type="submit"> Subscribe
-                <svg class="send" width="24" height="20">
+                <svg class="send" width="24" height="24">
                   <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
                 </button>
@@ -426,23 +426,29 @@
             </p>
             <form class="modal-form">
                 <div class="container-place">
-                <label class="modal-label" for="username">
+                <label class="modal-label" for="user-name">
                     Name 
                     </label>
                     <div class="container-input">
-                    <input class="place" type="text" id="username" name="user" placeholder="Your name" autofocus>
-                    <svg class="icon-place person" width="18" height="18">
-                      <use href="./images/icons.svg#icon-person-black"></use>
-                    </svg>
-                    </div>
-                    </div>
+                    <input class="place" type="text" id="user-name" name="user-name" placeholder="Your name" autofocus>
+                    <svg class="icon-place" width="18" height="24">
+                    <use href="./images/icons.svg#icon-person-black"></use>
+                     </svg>
+                     </div>
+                     </div>
                     <div class="container-place">
-                <label class="modal-label" for="usertel">
+                    <label class="modal-label" for="usertel">
                     Phone
-                    </label>
+                     </label>
                     <div class="container-input">
-                    <input class="place" type="tel" id="usertel" name="telephone-number" placeholder="Your phone">
-                    <svg class="icon-place telephone" width="18" height="24">
+                        <input 
+                        class="place" 
+                        type="tel" 
+                        id="usertel" 
+                        name="telephone-number" 
+                        placeholder="Your phone"
+                        >
+                    <svg class="icon-place" width="18" height="24">
                       <use href="./images/icons.svg#icon-phone-black"></use>
                     </svg>
                     </div>
@@ -453,17 +459,17 @@
                     </label>
                     <div class="container-input">
                      <input class="place" type="email" id="email" name="mail" placeholder="Your mail">
-                     <svg class="icon-place mail" width="18" height="24">
+                     <svg class="icon-place" width="18" height="24">
                        <use href="./images/icons.svg#icon-email-black"></use>
                      </svg>
                     </div>
                     </div>
-                   
-                     <label class="modal-label" for="coment">
+                   <div class="container-modallabel"> 
+                     <label class="modal-label" for="user-comment">
                     Comment
                     </label>
-                    <textarea class="place plholder" name="comment" id="coment" placeholder="Text input"></textarea>
-
+                    <textarea class="place plholder" name="comment" id="user-comment" placeholder="Text input"></textarea>
+                   </div>       
                     <div class="container-checkbox">
                         <input 
                          type="checkbox" 
